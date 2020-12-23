@@ -1,0 +1,23 @@
+<div class="col-6 mx-auto">
+    <h2 class="text-primary">Build A Twitch Bot</h2>
+    <div class="card">
+        <div class="card-body">
+            <form [formGroup]="botForm">
+                <div class="form-group">
+                    <label for="exampleInputEmail">Email address</label>
+                    <input formControlName="email" type="email" class="form-control" aria-describedby="emailHelp" placeholder="Enter email">
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-group">
+                    <label>Bot name</label>
+                    <input formControlName="botName" type="text" class="form-control" placeholder="Enter bot name">
+                </div>
+                <div class="form-check">
+                    <input formControlName="agreed" type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label pb-2" for="exampleCheck1">Agree to terms & conditions</label>
+                </div>
+                <button (click)="submitForm()" type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>
